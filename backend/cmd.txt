@@ -1,0 +1,26 @@
+python -m venv env
+source env/Scripts/activate
+pip install django django-rest-framework djangorestframework-simplejwt
+pip freeze > requirements.txt
+django-admin startproject config .
+python manage.py startapp users
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+django-admin startapp users
+python manage.py createsuperuser
+
+pip install django-cors-headers
+
+hamid@shah.com
+123456
+-----------------------------------
+13
+-----------------------------------
+echo "# drf-nuxt" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/hamid-shahmohammadi/drf-nuxt.git
+git push -u origin main
