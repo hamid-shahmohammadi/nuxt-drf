@@ -1,9 +1,11 @@
 echo "# nuxt-drf" >> README.md
 git init
 git add README.md
-git commit -m "first commit"
+git commit -m "00-7-4-1256"
 git branch -M main
 git remote add origin https://github.com/hamid-shahmohammadi/nuxt-drf.git
 git push -u origin main
 ------------------------------
-14
+17
+-----------------------------
+https://github.com/ShahriyarR/nuxtjs-jwt-django-rest-framework

@@ -42,6 +42,16 @@ def login(request):
     }
     
     return response
+
+class CurrentLoggedInUser(ModelViewSet):
+    queryset = get_user_model().objects.all()
+    permission_classes = (IsAuthenticated, )
+    serializer_class = UserSerializer
+    
+    def retrieve(self, request, *args, **kwargs):
+        user_profile = self.queryset.get(email=request.user.email)
+        serializer = self.get_serializer(user_profile)
+        return Response({'user': serializer.data})    
     
 
 

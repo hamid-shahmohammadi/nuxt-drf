@@ -9,6 +9,7 @@ python manage.py makemigrations
 python manage.py migrate
 django-admin startapp users
 python manage.py createsuperuser
+winpty python manage.py createsuperuser
 
 pip install django-cors-headers
 
